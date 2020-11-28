@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E9B43AF-108A-4554-82C3-C61656EBD0BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AccountSW.My.MyApplication</StartupObject>
+    <RootNamespace>AccountSW</RootNamespace>
+    <AssemblyName>AccountSW</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AccountSW.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AccountSW.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addPaymentForm.Designer.vb">
+      <DependentUpon>addPaymentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addPaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addRecipetForm.Designer.vb">
+      <DependentUpon>addRecipetForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addRecipetForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADOX\Catalog.vb" />
+    <Compile Include="cancelPurchaseForm.Designer.vb">
+      <DependentUpon>cancelPurchaseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cancelPurchaseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editCompForm.Designer.vb">
+      <DependentUpon>editCompForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editCompForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homePageForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homePageForm.Designer.vb">
+      <DependentUpon>homePageForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listItemForm.Designer.vb">
+      <DependentUpon>listItemForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="listItemForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listPaymentForm.Designer.vb">
+      <DependentUpon>listPaymentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="listPaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listPurchaseForm.Designer.vb">
+      <DependentUpon>listPurchaseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="listPurchaseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listRecipetForm.Designer.vb">
+      <DependentUpon>listRecipetForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="listRecipetForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listSaleForm.Designer.vb">
+      <DependentUpon>listSaleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="listSaleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.vb">
+      <DependentUpon>loginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.vb">
+      <DependentUpon>mainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addAccForm.Designer.vb">
+      <DependentUpon>addAccForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addAccForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifyAccForm.Designer.vb">
+      <DependentUpon>modifyAccForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modifyAccForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listAccForm.Designer.vb">
+      <DependentUpon>listAccForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="listAccForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addItemForm.Designer.vb">
+      <DependentUpon>addItemForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addItemForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifyItemForm.Designer.vb">
+      <DependentUpon>modifyItemForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modifyItemForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSaleForm.Designer.vb">
+      <DependentUpon>addSaleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addSaleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cancelSaleForm.Designer.vb">
+      <DependentUpon>cancelSaleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cancelSaleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="purchaseForm.Designer.vb">
+      <DependentUpon>purchaseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="purchaseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="addPaymentForm.resx">
+      <DependentUpon>addPaymentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addRecipetForm.resx">
+      <DependentUpon>addRecipetForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cancelPurchaseForm.resx">
+      <DependentUpon>cancelPurchaseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editCompForm.resx">
+      <DependentUpon>editCompForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homePageForm.resx">
+      <DependentUpon>homePageForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listItemForm.resx">
+      <DependentUpon>listItemForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listPaymentForm.resx">
+      <DependentUpon>listPaymentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listPurchaseForm.resx">
+      <DependentUpon>listPurchaseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listRecipetForm.resx">
+      <DependentUpon>listRecipetForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listSaleForm.resx">
+      <DependentUpon>listSaleForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addAccForm.resx">
+      <DependentUpon>addAccForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifyAccForm.resx">
+      <DependentUpon>modifyAccForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listAccForm.resx">
+      <DependentUpon>listAccForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addItemForm.resx">
+      <DependentUpon>addItemForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifyItemForm.resx">
+      <DependentUpon>modifyItemForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSaleForm.resx">
+      <DependentUpon>addSaleForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cancelSaleForm.resx">
+      <DependentUpon>cancelSaleForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchaseForm.resx">
+      <DependentUpon>purchaseForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Rsources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
